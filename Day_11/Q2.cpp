@@ -1,17 +1,15 @@
+
 #include<iostream>
 using namespace std;
-int sum(int,int);
+int max(int,int);
 int main(){
-    int a;
-    int b;
-    cin>>a;
-    cin>>b;
-    int summing;
-    summing=sum(a,b);
-    cout<<summing;
+    int a,b;
+    cin>>a>>b;
+    int big=max(a,b);
 }
-int sum(int a,int b){
-    int z;
-    z=a+b;
-    return(z);
-}
+int max(int a,int b){
+    if(a>b){
+return(a);
+    }
+else
+        return b;
